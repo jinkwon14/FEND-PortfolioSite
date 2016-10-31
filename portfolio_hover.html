@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link stylesheet and scripts. Followed the direction from Bootstrap website -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- additional style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- import fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!-- internet browser thumbnail -->
+    <link rel="icon" href="img/gyul.png">
+  </head>
+
+  <body>
+  <div class="container">
+    <!-- top portion of the webpage: logo+name+career(?) -->
+    <header class="title row">
+      <div class="col-sm-6">
+        <img class="title-logo img-rounded" src="img/corgi.png" alt="webpage logo; a blank-faced corgi dog">
+      </div>
+      <div class="title-name-career col-sm-6 text-uppercase text-right">
+        <h1 class="title-name">Jin Kwon</h1>
+        <h4 >Future Web Developer</h4>
+      </div>
+    </header>
+    <!-- Underline -->
+    <hr>
+    <!-- Main picture -->
+    <figure class="row ">
+      <div class="col-md-12">
+        <img class="img-responsive" src="img/good_old_days.jpg" alt="picture of three wine glasses on table at Rice University">
+      </div>
+    </figure>
+    <!-- list of projects -->
+    <div class="features-title row">
+      <div class="col-md-12">
+        <h2 class="work-title text-left">Featured Projects</h2>
+      </div>
+    </div>
+    <article class="features row text-center">
+      <div class="col-md-4">
+        <div class="hovereffect">
+          <a data-target="#bio-modal" data-toggle="modal">
+            <img class="project-img img-responsive" src="img/wafer-etching.png" alt="simulation result that shows electrolyte potential color-map of a silicon wafer etching apparatus">
+            <div class="overlay"></div>
+          </a>
+        </div>
+        <h3>Silicon Wafer Etching Simulation</h3>
+      </div>
+      <div tabindex="-1" class="modal fade" id="bio-modal" role="dialog" aria-hidden="true" aria-labelledby="swes">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img class="modal-img img-responsive" src="img/wafer-etching.png" alt="simulation result that shows electrolyte potential color-map of a silicon wafer etching apparatus">
+              <h2 id="swes">Silicon Wafer Etching Simulation Project</h2>
+              <ul class="text-left">
+                <li><p>Designed a foundation of simulation model of a hazardous experiment by collaborating with group members.</p></li>
+                <li><p>Mastered a new simulation software to accelerate a hazardous lab experiment in a safer environment at less cost.</p></li>
+                <li><p>Presented simulation experiment results in front of 20+ Soft Matter Research Group members.</p></li>
+              </ul>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div class="col-md-4">
+        <a data-target="#EOR-modal" data-toggle="modal">
+          <img class="project-img img-responsive" src="img/oil-recovery.png" alt="particle deposition occuring in a microfluidics device">
+        </a>
+        <h3>Enhanced Oil Recovery</h3>
+      </div>
+      <div tabindex="-1" class="modal fade" id="EOR-modal" role="dialog" aria-hidden="true" aria-labelledby="eor">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img class="modal-img img-responsive" src="img/oil-recovery.png" alt="particle deposition occuring in a microfluidics device">
+                <h2 id="eor">Enhanced Oil Recovery Project</h2>
+                <ul class="text-left">
+                  <li><p>Initiated an independent project by suggesting new parameters to the ongoing research that will deepen the understanding of well clogging phenomena in crude oil production.</p></li>
+                  <li><p>Devised a workflow for the stand alone project for systematic data collection and expedited data analysis.</p></li>
+                  <li><p>Presented research thesis at Texas Soft Matter Meeting in front of 80+ researchers in place of advisor Ph.D.</p></li>
+                </ul>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div class="col-md-4 ">
+        <a data-target="#senior-modal" data-toggle="modal">
+          <img class="project-img img-responsive" src="img/pfd.png" alt="process flow diagram of heptene separation process">
+        </a>
+        <h3>Chemical Separation Optimization</h3>
+        <div tabindex="-1" class="modal fade" id="senior-modal" role="dialog" aria-hidden="true" aria-labelledby="cso">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="modal-img img-responsive" src="img/pfd.png" alt="process flow diagram of heptene separation process">
+                  <h2 id="cso">Heptene Separation Optimization Project</h2>
+                  <ul class="text-left">
+                    <li><p>Collaborated with team members to formulate optimal heptene separation process.</p></li>
+                    <li><p>Utilized chemical process simulation software to conduct economic analysis.</p></li>
+                    <li><p>Presented the results at a senior design poster session.</p></li>
+                  </ul>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div>
+    </article>
+  </div>
+  </body>
+</html>
